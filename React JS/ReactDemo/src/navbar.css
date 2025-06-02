@@ -1,0 +1,45 @@
+.navbar {
+  background-color: #333; /* Example background color */
+  color: white;
+  padding: 1rem 0;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between; /* Distribute items along the main axis */
+  align-items: center; /* Align items vertically in the center */
+  max-width: 1200px; /* Optional: Limit the maximum width of the navbar */
+  margin: 0 auto; /* Center the navbar horizontally */
+  padding: 0 20px; /* Add some padding on the sides */
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-menu {
+  list-style: none; /* Remove default list styling */
+  display: flex; /* Arrange list items horizontally */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  margin-left: 20px; /* Add spacing between menu items */
+}
+
+.nav-links {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease; /* Add a smooth color transition on hover */
+}
+
+.nav-links:hover {
+  color: #f0f0f0; /* Slightly lighter color on hover */
+}
+
+/* Add more styles as needed */
