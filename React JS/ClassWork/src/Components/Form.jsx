@@ -6,6 +6,8 @@ export default function Form() {
 
     const [record, setRecord] = useState([])
 
+    const [image, setImage] = useState()
+
     const handleChange = (e) => {
         setFormData({
             ...formData,
@@ -14,7 +16,16 @@ export default function Form() {
     }
 
     const handleClick = () => {
-        setRecord([...record, formData])
+        const img = URL.createObjectURL(image)
+        const form = {...formData,image:img}
+        setRecord([...record, form])
+
+        setFormData({
+            name : "",
+            city : "",
+            subject : ""
+        })
+        setImage(File)
     }
     return (
         <div>
@@ -40,6 +51,7 @@ export default function Form() {
                    onChange={handleChange}
 
       />
+      <input type="file" onChange={(e)=>setImage(e.target.files[0])}/>
 
             <button onClick={handleClick}>Submit</button>
 
@@ -49,6 +61,7 @@ export default function Form() {
                         <li>{e.name}</li>
                         <li>{e.city}</li>
                         <li>{e.subject}</li>
+                        <li><img width="20%" src={e.image} alt="" /></li>
 
                     </ul>
                 })

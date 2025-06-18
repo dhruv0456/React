@@ -1,12 +1,15 @@
 import { useState } from 'react'
 import './App.css'
+import Formvali from './Components/Formvali'
 // import Event from './Components/Event'
-import Form from './Components/Form'
+// import Form from './Components/Form'
 // import Navbar from './Pages/Navbar'
 // import Footer from './Pages/Footer'
 // import ArryOfObj from './Components/ArrayOfObj'
 // import Events from './Components/Events'
 // import UseRef from './Components/Useref'
+
+
 
 
 
@@ -18,8 +21,9 @@ function App() {
     <Footer/>
     <ArrayOfObj/> */}
     {/* <Event/> */}
-    <Form/>
+    {/* <Form/> */}
     {/* <UseRef/> */}
+    <Formvali/>
     </>
   )
 }
