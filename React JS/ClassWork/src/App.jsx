@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
-import Formvali from './Components/Formvali'
+// import Localstorage from './Components/Localstorage'
+// import Formvali from './Components/Formvali'
 // import Event from './Components/Event'
 // import Form from './Components/Form'
 // import Navbar from './Pages/Navbar'
@@ -23,7 +24,8 @@ function App() {
     {/* <Event/> */}
     {/* <Form/> */}
     {/* <UseRef/> */}
-    <Formvali/>
+    {/* <Formvali/> */}
+    {/* <Localstorage/> */}
     </>
   )
 }
